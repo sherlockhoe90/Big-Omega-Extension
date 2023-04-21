@@ -114,7 +114,7 @@ function OmegaMenu(props) {
 			<div className="omega-menu--icon" onClick={handleToggleMenu}>
 				<BigOmegaLogo theme={state.theme} />
 			</div>
-			{state.isMenuOpen && (
+			{state.isMenuOpen && state.isMenuHovered && (
 				<div
 					className="omega-menu--list"
 					style={{
