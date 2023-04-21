@@ -114,6 +114,7 @@ function OmegaMenu(props) {
 			<div className="omega-menu--icon" onClick={handleToggleMenu}>
 				<BigOmegaLogo theme={state.theme} />
 			</div>
+			/* makes it mandatory for the state to be isMenuOpen and Hovered at the same time, without which it won't expand/show */
 			{state.isMenuOpen && state.isMenuHovered && (
 				<div
 					className="omega-menu--list"
